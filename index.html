@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme d'échange étudiant-mentor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plateforme d'échange étudiant-mentor de l'IESEG</h1>
+    </header>
+    <section class="content">
+        <h2>Trouvez votre mentor qui peut vous accompagner sur les projets de l'IESEG</h2>
+        <p>Ce site permet aux étudiants A1 de trouver des étudiants ayant déjà fait plusieurs années d'études à les aider sur des projets dans différentes matières. </p>
+        <p>Recherchez par domaine d'études en cliquant sur ces boutons :</p>
+        <div class="buttons">
+            <button onclick="redirect('droit')">Droit</button>
+            <button onclick="redirect('micro')">Micro</button>
+            <button onclick="redirect('macro')">Macro</button>
+            <button onclick="redirect('maths')">Maths</button>
+        </div>
+    </section>
+    <footer>
+        <p>Plateforme d'échange étudiant-mentor - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        function redirect(domaine) {
+            window.location.href = domaine + ".html";
+        }
+    </script>
+</body>
+</html>
